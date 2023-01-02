@@ -12,8 +12,19 @@ Console.Write("Введите число b2: ");
 double b2 = Convert.ToInt32(Console.ReadLine());
 double x = (b2-b1) / (k1-k2);
 double y = k2 * x + b2;
+if (k1 == k2 && b1==b2)
+{
+    Console.WriteLine("две прямые совпадают");
+}
 
+else if (k1 ==k2 && b1!=b2)
+{
+  Console.WriteLine("две прямые не пересекаются");  
+}
+else 
+{
 Console.Write($"x = {Math.Round(x,3)}; y = {Math.Round(y, 3)}");
+}
 
 
 
